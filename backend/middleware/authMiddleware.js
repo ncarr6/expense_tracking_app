@@ -3,26 +3,18 @@ import JWT from "jsonwebtoken";
 const authMiddleware = async (req, res, next) => {
     const authHeader = req?.headers?.authorization;
 
-    //MAKE CHANGES 
-    const databaseUserId = req?.body.user;
-    //write check against queried user id 
-    //req?.body.user.id;
-
     if(!authHeader || !authHeader?.startsWith("Bearer")) {
         return res.status(401).json({ status: "auth_failed", message: "Authentication failed"});
     }
 
     const token = authHeader?.split(" ")[1];
 
-
     try {
-        const userToken = JWT.verify(token, process.env.JWT_SECRET);1``
+        const userToken = JWT.verify(token, process.env.JWT_SECRET);
 
-        //attatch token to id
-
+        //send token along
         req.body.user = {
             userIdVerified: userToken.userId,
-            databaseUserId: databaseUserId
         };
         
         next();
