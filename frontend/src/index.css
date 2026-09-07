@@ -1,7 +1,9 @@
 @import "tailwindcss";
 @import "tailwindcss/preflight";
 /*@tailwind component;*/
-@tailwind utilities;
+/*@tailwind utilities;*/
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 /*Instead of a tailwind.config.js file, 
 you can configure all of your customizations

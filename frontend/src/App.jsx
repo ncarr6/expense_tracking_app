@@ -8,8 +8,10 @@ import Transactions from "./components/transactions";
 
 
 function App() {
-  const theme = "light";
-  return <main className={theme}>
+  const theme = "dark";
+  return (
+  
+        <main className={theme}>
             <div className="w-full px-6 md:px-20 bg-white dark:bg-slate-900">
                 <Navbar/> 
 
@@ -29,6 +31,7 @@ function App() {
                 </div>
             </div>
         </main>
+        )
 
 }
 
