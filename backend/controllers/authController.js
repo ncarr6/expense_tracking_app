@@ -1,7 +1,5 @@
 //create and sign in users 
 
-//learn more about network traffic
-
 import { pool } from "../libs/database.js";
 import { comparePassword, createJWT, hashPassword } from "../libs/index.js";
 

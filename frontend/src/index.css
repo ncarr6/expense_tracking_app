@@ -2,3 +2,8 @@
 @tailwind base;
 @tailwind component;
 @tailwind utilities;
+
+/*Instead of a tailwind.config.js file, 
+you can configure all of your customizations
+ directly in the CSS file where you import Tailwind*/
+  

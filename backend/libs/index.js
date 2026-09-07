@@ -5,8 +5,7 @@ import dotenv from 'dotenv';
 export const hashPassword = async (userValue) => {
     const salt = await bcrypt.genSalt(10);
 
-    //can add callback for error handling from genSalt
-    //bcrypt adds the salt to the final hashed string
+    //add error handling
     const hashedPassword = await bcrypt.hash(userValue, salt);
 
     return hashedPassword;
@@ -14,8 +13,7 @@ export const hashPassword = async (userValue) => {
 
 export const comparePassword = async(userPassword, password)=> {
     try {
-        //plain text and encrypted string 
-        
+        //plain text and hashed string 
         const isMatch = await bcrypt.compare(userPassword, password);
 
         return isMatch;

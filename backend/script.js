@@ -43,6 +43,10 @@ CREATE TABLE transaction (
 
    //transaction date is when the amount was deducted from the account 
    //budget date allows user to control which month the expense should be counted against 
+   //because I operate that way
+
+   //if I take money out from schwab, does that spending go to cash account?
+    //transaction type as cash withdrawl. it should not be deducted from ledger 
 
 CREATE TABLE category (
     category_id SERIAL NOT NULL PRIMARY KEY, 
