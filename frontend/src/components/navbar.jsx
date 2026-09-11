@@ -48,7 +48,7 @@ function Navbar() {
 
           <MdOutlineKeyboardArrowDown className="hidden md:block text-2xl
           text-gray-600 dark:text-gray-300 cursor-pointer"/>
-          
+
         </div>
       </div>
 
