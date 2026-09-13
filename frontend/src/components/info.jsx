@@ -7,6 +7,7 @@ function Info ({title, subTitle}) {
 
     <div className="mb-6">
       <h1 className="text-4xl font-semibold text-black dark:text-gray-300 mb-2">{title}</h1>
+      
       <span className="text-gray-600 dark:text-gray-500">{subTitle}</span>
     </div>
 
