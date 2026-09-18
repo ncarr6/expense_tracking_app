@@ -11,32 +11,31 @@ function App() {
   const theme = "light";
   return (
   
-        <main className={theme}>
-            <div className="w-full px-6 md:px-20 bg-white dark:bg-slate-900">
-                <Navbar/> 
+      <main className={theme}>
+        <div className="px-10 min-h-screen bg-white dark:bg-slate-900">
+          <Navbar />
 
-                <div className="px-0 md:px-5 2xl:px-20">
+          <div className="grid h-screen mx-auto w-full px-6 md:px-4">
+            <Info
+              title="Dashboard"
+              subTitle="Analyze your spending"
+            />
 
-                  { <Info
-                      title="Dashboard"
-                      subTitle="Analyze your spending"
-                    /> }
+            <Stats />
 
-                     { <Stats/> }
-
-                    <div className="w-full flex flex-col-reverse md:flex-row items-center gap-10">
-                      { <Chart/> }
-                      { <DoughnutChart/> }
-                    </div>
-
-                    <div className="flex flex-col-reverse md:flex-row gap-0 md:gap-10 2xl:gap-20">
-                       { <Transactions/> }
-                       { <Accounts/> }
-                    </div>
-                </div>
+            <div className="flex w-full flex-col-reverse items-center gap-10 md:flex-row">
+              <Chart />
+              <DoughnutChart />
             </div>
-        </main>
-        )
+
+            <div className="flex flex-col-reverse gap-10 md:flex-row">
+              <Transactions />
+              <Accounts />
+            </div>
+          </div>
+        </div>
+      </main>
+    )
 
 }
 
