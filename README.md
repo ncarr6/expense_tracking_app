@@ -1,4 +1,4 @@
-Hey! This is my expense tracking app. 
+Hey! This is my spending tracking app. 
 
 I've been tracking every. single. transaction. I've made for over seven years now. I started tracking on my iPhone notes app, then moved to Excel, then moved to a point-and-click app I made that only has 5MB of free storage. I'd like more storage, and honestly I do not like the design choices I made many years ago with the point-and-click app, so I'm making this app to have full control over how I track, visualize, and analyze my spending.
 
