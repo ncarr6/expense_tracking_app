@@ -4,9 +4,9 @@ I'm really into personal finance; I've been tracking every. single. transaction.
 
 **Planned Features** (so far)
 
--be able to import transaction csv files 
-
 -have customizable spending analysis widgets 
+
+-be able to import transaction csv files 
 
 -break up transactions into sub-transactions (for example, if I go to the grocery store
 and spend money on home goods and food in one transaction, I'd like to track how much I've spent on each category).
