@@ -17,29 +17,27 @@ function DoughnutChart( ) {
     <div className="w-full md:w-1/3 flex flex-col items-center">
       <Title title="Spending by Category this Month"/>
 
-      <ResponsiveContainer width={"100%"} />
-          <PieChart width={500} height={400}>
-                <Tooltip />
-                <Pie
-                    data={test_data}
-                    dataKey="amount"
-                    outerRadius={150}
-                    innerRadius={70}
-                    
+      <ResponsiveContainer width="100%" height={400}>
+        <PieChart>
+          <Tooltip />
+          <Pie
+            data={test_data}
+            dataKey="amount"
+            outerRadius="90%"
+            innerRadius="45%"
+            shape={(props) => {
+              const { index } = props;
 
-                    shape={(props) => {
-                      const { index } = props;
-                      return (
-                        <Sector
-                          {...props} 
-                          fill={COLORS[index % COLORS.length]} 
-                        />
-                      );
-                    }}
-                     
+              return (
+                <Sector
+                  {...props}
+                  fill={COLORS[index % COLORS.length]}
                 />
-
-            </PieChart>
+              );
+            }}
+          />
+        </PieChart>
+      </ResponsiveContainer>
     </div>
   )
 
