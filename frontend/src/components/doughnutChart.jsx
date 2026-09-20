@@ -8,7 +8,7 @@ import Title from "./title";
       { name: "Misc", amount: 210 },
   ]
 
-  const COLORS = ["#FFB3BA", "#BAE1FF", "#BAFFC9", "#FFFFBA"]
+  const COLORS = ["#E394A1", "#8E6C88", "#6E9DB5", "#E5A878", "#A99BC4", "#8EAD91", "#A6A0A2"]
 
 function DoughnutChart( ) {
 
