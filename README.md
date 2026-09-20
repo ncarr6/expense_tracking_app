@@ -21,7 +21,7 @@ Frontend:
 React, Tailwind CSS
 
 Backend:
-Node.js, Express
+Node.js, Express.js
 
 Database:
 PostgreSQL
