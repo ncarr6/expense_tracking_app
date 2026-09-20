@@ -10,7 +10,7 @@ import Transactions from "./components/transactions";
 function App() {
   return (
   
-      <main className= "bg-[#FCF9F8]">
+      <main className= "bg-[#FCF9F8] overflow-x-hidden">
         <div className="px-10">
           <Navbar />
 
