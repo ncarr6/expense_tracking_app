@@ -1,5 +1,5 @@
 import { useState } from "react";
-const links = ["Dashboard", "Transactions", "Accounts", "Settings"];
+const links = ["Dashboard", "Transactions", "Accounts"];
 import { FaMoneyBills } from "react-icons/fa6";
 import { CatAvatar } from "../assets/index.js"
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
