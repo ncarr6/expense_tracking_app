@@ -4,7 +4,7 @@ I'm really into personal finance; I've been tracking every. single. transaction.
 
 **Planned Features**
 
--import transaction csv files 
+-be able to import transaction csv files 
 
 -have customizable spending analysis widgets 
 
