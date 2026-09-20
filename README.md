@@ -26,7 +26,7 @@ Node.js, Express.js
 Database:
 PostgreSQL
 
-What the dashboard looking like so far (with dummy data):
+What the dashboard is looking like so far (with dummy data):
 <img width="2800" height="2734" alt="dashboard" src="https://github.com/user-attachments/assets/35c574da-a084-4815-9791-db79ba0bd8b0" />
 
 
