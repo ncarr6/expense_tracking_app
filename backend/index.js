@@ -39,6 +39,3 @@
  app.listen(PORT, () => {
     console.log('Server running on port ' + PORT);
  });
-
-
- //dont fckin expose this server to the web without security features 
