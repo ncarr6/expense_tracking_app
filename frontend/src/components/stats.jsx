@@ -25,7 +25,7 @@ function Stats() {
 
       { testData.map((item, index)=>(
           <div key={index + item.label} className="w-full 2xl:min-w-96 flex items-center justify-between
-          gap-5 px-4 md:px-8 py-12 rounded-lg bg-[#FFFFFF] border-gray-100">
+          gap-5 px-4 md:px-8 py-8 rounded-lg bg-[#FFFFFF] border-gray-100">
 
             <div className="flex items-center justify-center gap-2">
               <div className={`w-12 h-12 flex items-center justify-center rounded-full ${ICON_STYLES[0]}` }>

@@ -10,11 +10,11 @@ import Transactions from "./components/transactions";
 function App() {
   return (
   
-      <main>
-        <div className="px-10 min-h-screen bg-[#FCF9F8]">
+      <main className= "bg-[#FCF9F8]">
+        <div className="px-10">
           <Navbar />
 
-          <div className="grid h-screen mx-auto w-full px-6 md:px-4">
+          <div className="grid min-h-screen mx-auto w-full px-6 md:px-4">
             <Info
               title="Dashboard"
               subTitle="Analyze your spending"
@@ -22,7 +22,7 @@ function App() {
 
             <Stats />
 
-            <div className="flex w-full flex-col-reverse items-center gap-10 md:flex-row">
+            <div className="flex w-full flex-col gap-20 md:flex-row md:items-start">
               <Chart />
               <DoughnutChart />
             </div>
