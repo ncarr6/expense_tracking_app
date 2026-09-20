@@ -27,8 +27,8 @@ function DoughnutChart( ) {
             innerRadius="45%"
             shape={(props) => {
               const { index } = props;
-
               return (
+                
                 <Sector
                   {...props}
                   fill={COLORS[index % COLORS.length]}
