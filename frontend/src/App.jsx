@@ -8,11 +8,10 @@ import Transactions from "./components/transactions";
 
 
 function App() {
-  const theme = "light";
   return (
   
-      <main className={theme}>
-        <div className="px-10 min-h-screen bg-[#FCF9F8] dark:bg-slate-900">
+      <main>
+        <div className="px-10 min-h-screen bg-[#FCF9F8]">
           <Navbar />
 
           <div className="grid h-screen mx-auto w-full px-6 md:px-4">

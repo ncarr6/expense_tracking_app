@@ -16,14 +16,14 @@ function Navbar() {
         <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-[#B85F70] rounded-xl">
           <FaMoneyBills className="text-white text-3xl hover:animate-bounce"/>
         </div>
-        <span className="text-xl font-bold text-black dark:text-white">My Spending</span>
+        <span className="text-xl font-bold text-black ">My Spending</span>
       </div>
 
       {/* links hidden on small devices  */}
       <div className="hidden md:flex items-center gap-4">
         {links.map((link, index) => (
           <div key={index} className={`${index === selected ?  "bg-[#292528] text-white" 
-            : "text-gray-700 dark:text-grey-500"} px-6 py-2 rounded-full`}
+            : "text-gray-700"} px-6 py-2 rounded-full`}
             onClick={()=> setSelected(index)}
             >
             <a href="#">{link}</a>
@@ -33,7 +33,6 @@ function Navbar() {
       </div>
 
       <div className="flex items-center gap-10 2xl:gap-20">
-        { /* <ThemeSwitch/> */}
 
         <div className="flex items-center gap-2">
          
@@ -42,12 +41,12 @@ function Navbar() {
           rounded-full object-cover cursor-pointer"/>
 
           <div className="hidden md:block">
-            <p className="text-lg font-medium text-black dark:text-gray-400">User Name!</p>
-            <span className="text-sm text-gray-700 dark:text-gray-500">user@email.com</span>
+            <p className="text-lg font-medium text-black">User Name!</p>
+            <span className="text-sm text-gray-700">user@email.com</span>
           </div>
 
           <MdOutlineKeyboardArrowDown className="hidden md:block text-2xl
-          text-gray-600 dark:text-gray-300 cursor-pointer"/>
+          text-gray-600 cursor-pointer"/>
 
         </div>
       </div>

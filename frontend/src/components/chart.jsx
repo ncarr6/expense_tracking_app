@@ -1,5 +1,5 @@
 import { CartesianGrid, Legend, Line, LineChart,
-  ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+  ResponsiveContainer, XAxis, YAxis } from 'recharts';
 import Title from './title';
 
 

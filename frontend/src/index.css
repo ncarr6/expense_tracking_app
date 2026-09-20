@@ -2,8 +2,6 @@
 /*@tailwind component;*/
 /*@tailwind utilities;*/
 
-@custom-variant dark (&:where(.dark, .dark *));
-
 /*Instead of a tailwind.config.js file, 
 you can configure all of your customizations
  directly in the CSS file where you import Tailwind
