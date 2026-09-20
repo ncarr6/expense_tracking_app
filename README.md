@@ -13,6 +13,7 @@ and spend money on home goods and food in one transaction, I'd like to track how
 -allow a transaction to occur on one date but count toward a different month's budget. Say I buy a plane ticket in July for December, but I want that plane ticket to count against December's budget.
 
 **Tech Stack**
+
 Frontend:
 React, Tailwind CSS
 
