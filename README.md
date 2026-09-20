@@ -11,7 +11,7 @@ I'm really into personal finance; I've been tracking every. single. transaction.
 -break up transactions into sub-transactions (for example, if I go to the grocery store
 and spend money on home goods and food in one transaction, I'd like to track how much I've spent on each category).
 
--allow for expense spreading (like paying an insurance premium up-front and then spreading it out over the next six months)
+-allow for expense spreading (like paying an insurance premium up-front and then spreading it out over the next six months).
 
 -allow a transaction to occur on one date but count toward a different month's budget. Say I buy a plane ticket in July for December, but I want that plane ticket to count against December's budget.
 
