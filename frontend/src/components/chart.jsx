@@ -20,7 +20,10 @@ function Chart() {
         <LineChart width={500} height={300} data={test_data}>
           <CartesianGrid strokeDasharray='3 3'/>
           <YAxis />
-          <XAxis />
+          <XAxis 
+            dataKey="label" 
+            type="category" 
+          />
           <Legend />
           <Line 
           type="monotone" dataKey={"spent"} stroke="#8884d8"/>
