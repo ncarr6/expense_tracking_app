@@ -1,6 +1,6 @@
 Hey! This is my spending tracking app. 
 
-I'm really into personal finance; I've been tracking every. single. transaction. I've made for over seven years now. I first started tracking everything on my iPhone notes app, then moved to Excel, then moved to a point-and-click app I configured that only has 5MB of free storage :upside_down_face:. I'm running out of storage, I want more features, and honestly I'm not a fan of the design choices I made many years ago with the point-and-click app, so I'm making this app so I have full control over how I track, visualize, and analyze my spending. 
+I'm really into personal finance; I've been tracking every. single. transaction. I've made for over seven years now. I first started tracking everything on my iPhone notes app, then moved to Excel, then moved to a point-and-click app I configured that only has 5MB of free storage. I'm now running out of storage, I want more features, and honestly I'm not a fan of the design choices I made many years ago with the point-and-click app, so I'm making this app so I have full control over how I track, visualize, and analyze my spending. 
 
 **Planned Features** (so far)
 
