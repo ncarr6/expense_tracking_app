@@ -5,17 +5,49 @@ import Navbar from "./components/navbar";
 import Stats from "./components/stats";
 import Transactions from "./components/transactions";
 import {Navigate, Outlet, Route, Routes } from "react-router-dom";
+
 import SignIn from "./pages/auth/sign-in";
 import SignUp from "./pages/auth/sign-up";
+import Dashboard from "./pages/dashboard";
+import Settings from "./pages/settings";
+//import AccountPage from "./pages/acount-page";
+//import Transactions from "./pages/transactions";
+
+//if there isn't a user, make them log in
+const RootLayout = ()=> {
+  const user = null;
+  return !user ? (<Navigate to="sign-in" replace={true}/>)  : 
+  (
+      <>
+        <div>
+          <Outlet />
+        </div>
+      </>
+  )
+
+}
 
 function App() {
   return (
 
     <main className="min-h-screen overflow-x-hidden bg-[#FCF9F8]">
-          <div>
-            <Route path="/sign-in" element={<SignIn />} />
-            <Route path="/sign-up" element={<SignUp />} />
-          </div>
+      <div>
+      <Routes>
+        <Route element={<RootLayout/>}>
+          <Route path="/" element={<Navigate to="/overview" />} />
+          <Route path="/overview" element={<Dashboard />}/>
+          <Route path="/settings" element={<Settings />}/>
+         
+
+
+        </Route>
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/sign-up" element={<SignUp />} />
+
+      </Routes>
+
+      </div>
+
       <div className="px-6 md:px-10">
         <Navbar />
 
