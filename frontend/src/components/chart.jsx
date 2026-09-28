@@ -7,7 +7,7 @@ import Title from './title';
     { label: "January", spent: 1394 },
     { label: "February", spent: 1293 },
     { label: "March", spent: 1800 },
-    { label: "April", spent: 1800 },
+    { label: "April", spent: 200 },
   ]
 
 function Chart() {

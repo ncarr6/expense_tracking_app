@@ -1,5 +1,5 @@
 import { useState } from "react";
-const links = ["Dashboard", "Transactions", "Accounts"];
+const links = ["Dashboard", "Months", "Transactions", "Accounts"];
 import { FaMoneyBills } from "react-icons/fa6";
 import { CatAvatar } from "../assets/index.js"
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
@@ -41,8 +41,8 @@ function Navbar() {
           rounded-full object-cover cursor-pointer"/>
 
           <div className="hidden md:block">
-            <p className="text-lg font-medium text-black">User Name!</p>
-            <span className="text-sm text-gray-700">user@email.com</span>
+            <p className="text-lg font-medium text-black">Nancy Carr</p>
+            <span className="text-sm text-gray-700">nancy.l.carr2@gmail.com</span>
           </div>
 
           <MdOutlineKeyboardArrowDown className="hidden md:block text-2xl
