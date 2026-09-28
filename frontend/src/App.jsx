@@ -1,14 +1,21 @@
 import Chart from "./components/chart";
-import DoughnutChart from "./components/doughnutChart";
+import DoughnutChart from "./components/doughnut-chart";
 import Info from "./components/info";
 import Navbar from "./components/navbar";
 import Stats from "./components/stats";
 import Transactions from "./components/transactions";
-
+import {Navigate, Outlet, Route, Routes } from "react-router-dom";
+import SignIn from "./pages/auth/sign-in";
+import SignUp from "./pages/auth/sign-up";
 
 function App() {
   return (
+
     <main className="min-h-screen overflow-x-hidden bg-[#FCF9F8]">
+          <div>
+            <Route path="/sign-in" element={<SignIn />} />
+            <Route path="/sign-up" element={<SignUp />} />
+          </div>
       <div className="px-6 md:px-10">
         <Navbar />
 
