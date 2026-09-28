@@ -16,10 +16,9 @@
 
  // This enables CORS for ALL routes and ALL origins
   app.use(cors()); 
-  //FIXME
- //change to just my domain when I deploy
-
-//It is basically making your server accessible to any domain that requests a resource from your server via a browser.
+   //FIXME
+   //change to just my domain when I deploy
+   //It is basically making your server accessible to any domain that requests a resource from your server via a browser.
 
  app.use(express.json({ limit: "10mb" }));
  app.use(express.urlencoded({extended: true})); 
