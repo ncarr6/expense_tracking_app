@@ -66,7 +66,7 @@ export const createAccount  = async(req, res)=> {
 
         const accountCreationQuery = {
             text: 'INSERT INTO financial_account (account_name, last_four_digits, user_id) VALUES ($1, $2, $3) RETURNING *',
-            values: [name, account_number_last_four, userId]
+            values: [accountInfo.name, account_number_last_four, userId]
         }
 
         const accountInsertResult = await pool.query(accountCreationQuery);
