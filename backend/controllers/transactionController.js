@@ -1,6 +1,5 @@
 import { pool } from "../libs/database.js";
 
-
 export const getTransactions = async(req, res)=> {
 
 

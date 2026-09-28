@@ -46,15 +46,13 @@ export const changePassword = async(req, res)=> {
         
         //user needs to have the current password
         if (!isMatch) {
-            //bad response 
             return res.status(401).json({
                 status: "failed",
                 message: "incorrect password",
             });
         }
 
-        //new passwords need to match
-        //this check should be client side?
+        //this check should be client side as well
         if (!(newPassword === confirmPassword)) {
             return res.status(401).json({
                 status: "failed",
@@ -84,8 +82,7 @@ export const changePassword = async(req, res)=> {
     }
 } 
 
-
-//make sure no overrides 
+ 
 export const updateUser = async(req, res)=> {
     try {
 
@@ -111,7 +108,6 @@ export const updateUser = async(req, res)=> {
             user: updatedUser.rows[0],
         });
 
-        //reload page with new information??
 
     } catch (error) {
         console.log(error)
@@ -124,9 +120,6 @@ export const updateUser = async(req, res)=> {
 
 
 async function queryUser(userId) {
-
-        //I don't want someone to be able to change the header then log
-        //in to another person's account...think more on that 
 
         const userExist = await pool.query({
             text: "SELECT * from expenseappuser WHERE id = $1",

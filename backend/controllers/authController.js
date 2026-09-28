@@ -5,8 +5,6 @@ import { comparePassword, createJWT, hashPassword } from "../libs/index.js";
 
 export const signupUser = async(req, res)=> {
     try {
-
-        //I'd like to also validate the email one day 
         const{firstName, email, password} = req.body;
 
         if(!(firstName || email || password)) {
@@ -76,7 +74,6 @@ export const signinUser = async(req, res)=> {
                 })
         }
         
-        //?. syntax 
         const isMatch = await comparePassword(password, user?.password);
         
         if (!isMatch) {

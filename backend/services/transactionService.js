@@ -11,5 +11,5 @@
 //get transaction data
 //get transaction totals 
     //based on dates, category
-    //likely have on a looping system on front end to dig into each sub-category
+    //likely have system on frontend to dig into each sub-category
     //can also get averages  

@@ -48,34 +48,6 @@ CREATE TABLE category (
 );
 
 
-
-//talking to myself and ideation below this line. Will delete 
-
-//can insert default skeleton category records 
-
-   //transaction date is when the amount was deducted from the account 
-   //budget date allows user to control which month the expense should be counted against 
-   //because I operate that way
-
-   //if I take money out from schwab, does that spending go to cash account?
-    //transaction type as cash withdrawl. it should not be deducted from ledger 
-
-    user_layout_settings
-
-    type: page/global (restricted set) 
-    details: 
-
-    page setting looks up to a parent page setting
-    so we have a standard number of pages
-    dashboard
-    month list view
-    month view 
-    "x" category list view 
-
-
-    standard widgets built out for dashboard to select and delete and multiple user settings can hook into one widget
-
-
 */
 
 
