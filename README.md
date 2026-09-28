@@ -6,6 +6,8 @@ I'm really into personal finance; I've been tracking every. single. transaction.
 
 -have customizable spending analysis widgets 
 
+-be able to set recurring transactions
+
 -be able to import transaction csv files 
 
 -break up transactions into sub-transactions (for example, if I go to the grocery store
