@@ -1,15 +1,15 @@
-//dashboard for year to date data
-//query for all months in the year
-//group trans
-//count months
-//create graph based on totals
-//sum top level categories to break up bar graph 
 
-//put transaction logic in it's own service 
-//have another controller
 
-//get transaction data
-//get transaction totals 
-    //based on dates, category
-    //likely have system on frontend to dig into each sub-category
-    //can also get averages  
+//service layer handles logic, ds
+//should not interact with req/res objects or router logic
+//use service inside controller
+
+//controller layer should be the entry point
+//should not connect directly to a database (interesting, have to fix that then)
+
+
+
+//handed fields from controller
+//run query 
+//aggregate and manipulate data
+//return data to controller
