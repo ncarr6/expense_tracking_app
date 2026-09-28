@@ -1,7 +1,5 @@
 import { pool } from "../libs/database.js";
 
-//MOVE ALL OF THIS LOGIC INTO TRANSACTION SERVICE 
-
 
 export const getTransactions = async(req, res)=> {
 
