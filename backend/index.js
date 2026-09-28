@@ -14,7 +14,11 @@
  const app = express();
  const PORT = process.env.PORT || 8000; //fallback on port 8000 if my port doesnt exist
 
- app.use(cors("/*splat")); //accept request from anywhere 
+ // This enables CORS for ALL routes and ALL origins
+  app.use(cors()); 
+  //FIXME
+ //change to just my domain when I deploy
+
 //It is basically making your server accessible to any domain that requests a resource from your server via a browser.
 
  app.use(express.json({ limit: "10mb" }));
@@ -22,11 +26,11 @@
 
  app.use("/api-v1", routes); 
 
- //if user goes to any endpoint that we haven't specified 
+ //if user goes to any endpoint that I haven't specified 
  app.use("/*splat", (req, res)=> {
     res.status(404).json({
-        status: "404 Not found",
-        message: "Route not found",
+        status: "404 Not Found",
+        message: "I'm sorry! I don't have what you're looking for...I hope you have a nice day though.",
     });
  });
  
@@ -36,6 +40,7 @@
    });
    
 
- app.listen(PORT, () => {
+   //FIXME
+ app.listen(PORT,'127.0.0.1', () => {
     console.log('Server running on port ' + PORT);
  });

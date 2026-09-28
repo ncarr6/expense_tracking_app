@@ -5,7 +5,6 @@ import dotenv from 'dotenv';
 export const hashPassword = async (userValue) => {
     const salt = await bcrypt.genSalt(10);
 
-    //add error handling
     const hashedPassword = await bcrypt.hash(userValue, salt);
 
     return hashedPassword;
