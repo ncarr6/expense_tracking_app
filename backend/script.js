@@ -3,10 +3,8 @@
     email VARCHAR(120) UNIQUE NOT NULL,
     firstName VARCHAR(50) NOT NULL,
     lastName VARCHAR(50),
-    contact VARCHAR(15),
     accounts TEXT[],
     password TEXT,
-    currency VARCHAR(5) NOT NULL DEFAULT 'USD',
     createdAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updatedAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 )
