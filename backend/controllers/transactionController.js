@@ -9,8 +9,6 @@ export const getTransactions = async(req, res)=> {
     
     try {
 
-        //create transactionQueryService to build dynamic queries bc I'm annoyed
-
         /*
         request.body 
         {
@@ -204,14 +202,14 @@ export const deleteTransaction = async(req, res)=> {
 
 export const createRecurringTransaction = async(req, res)=> {
     try {
-
+        //I'll split this into it's own file
         //insert record for user with amount, frequency, description 
         //need a job to run every day - it checks the last one that was inserted
         //and sees if it's time to make a new one
 
-        //https://www.kanzaki.com/docs/ical/rrule.html
+        //https://www.kanzaki.com/docs/ical/rrule.html (an idea?)
 
-        //little script that runs everyday and checks out the recurrance strings in the DB 
+        //little script that runs everyday and checks out the recurrance strings in the DB?
 
     } catch (error) {
         console.log(error)
